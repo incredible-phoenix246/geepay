@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { Plus_Jakarta_Sans } from "next/font/google";
+import "./globals.scss";
+import Sidebar from "@/components/sidebar";
+import ThemeProvider from "@/context/themectx";
 
-const inter = Inter({ subsets: ["latin"] });
+const plusJ = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-plus-jakarta-sans",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <ThemeProvider>
+        <body className={plusJ.className}>
+          <Sidebar />
+          {children}
+        </body>
+      </ThemeProvider>
     </html>
   );
 }
