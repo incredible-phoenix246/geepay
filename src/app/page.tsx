@@ -4,6 +4,8 @@ import SalesTrend from "@/components/salestrend";
 
 import SalesTrendMob from "@/components/mobsalestrend";
 import TopPlat from "@/components/topplatform";
+import TopPlatmob from "@/components/mobtopcard";
+import Order from "@/components/order";
 
 const Home = () => {
   return (
@@ -12,7 +14,9 @@ const Home = () => {
       <SalesTrendMob />
       <div className="mt-3">
         <TopPlat />
+        <TopPlatmob />
       </div>
+      <Order />
     </div>
   );
 };

@@ -34,7 +34,7 @@ const Navbar = () => {
         "lg:px-9 px-3 border-b border-gray-200 dark:border-primary-light h-[50px] sm:h-[70px] md:h-[89px] flex items-center justify-between fixed md:relative max-md:top-0 max-md:left-0 max-md:z-[99] select-none bg-white/80 dark:!bg-navy-800 backdrop-blur-lg w-full"
       )}
     >
-      <div className="flex gap-x-2 sm:gap-x-4 items-center">
+      <div className="md:flex hidden gap-x-2 sm:gap-x-4 items-center">
         <h2 className="max-[370px]:text-base max-[500px]:text-lg text-xl capitalize font-medium text-[#26282C] dark:!text-white">
           Dashboard
         </h2>
@@ -47,11 +47,14 @@ const Navbar = () => {
         // value={searchValue}
         // onChange={handleInputChange}
       />
-      <div className="flex space-x-5 dark:!text-white">
+      <div className="md:flex hidden space-x-5 dark:!text-white">
         <Calendar />
         <h2>{todayDate}</h2>
         <Notification />
       </div>
+      {/* <div className="flex space-x-5 dark:!text-white md:hidden">
+        <h2>{todayDate}</h2>
+      </div> */}
       <Dropdown
         button={
           <div className="flex space-x-2 dark:!text-white items-center justify-center">
@@ -62,11 +65,11 @@ const Navbar = () => {
               src={avatar}
               alt="Elon Musk"
             />
-            <div>
+            <div className="hidden md:flex">
               <h2>Phoenix</h2>
               <span>phoenix@gmail.com</span>
             </div>
-            <ArrowDown2 />
+            <ArrowDown2 className="hidden md:flex" />
           </div>
         }
         classNames={
