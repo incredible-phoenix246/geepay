@@ -2,45 +2,32 @@ import { useThemeContext } from "@/context/themectx";
 import { cn } from "@/utils";
 import React from "react";
 import { BsMoon } from "react-icons/bs";
-import { FiMonitor } from "react-icons/fi";
 import { MdOutlineLightMode } from "react-icons/md";
 
 const ThemeButtons = () => {
   const { theme, setTheme } = useThemeContext();
   return (
-    <div className="flex flex-col items-center border border-gray-300 dark:border-primary-light p-[2px] rounded-full w-[115px] justify-center">
+    <div className="flex flex-col items-center border border-gray-300 rounded-full justify-between py-2  h-[92px]  dark:!bg-navy-800 max-w-[30px] self-center text-[30px]">
       <button
         type="button"
         className={cn(
-          "w-[33px] h-[33px] p-2",
-          theme === "light" && "bg-black/10  rounded-full "
+          " text-[#B2ABAB]",
+          theme === "light" && "bg-[#34CAA5]  rounded-full text-white"
         )}
         onClick={() => setTheme("light")}
       >
-        <MdOutlineLightMode className="text-header dark:text-gray-300" />
+        <MdOutlineLightMode className="text-header dark:text-white" />
       </button>
 
       <button
         type="button"
         className={cn(
-          "w-[33px] h-[33px]  p-2",
-          theme === "dark" &&
-            "bg-black/10   rounded-full dark:bg-primary-light/70"
+          " text-[#B2ABAB] ",
+          theme === "dark" && "bg-[#34CAA5]   rounded-full text-white"
         )}
         onClick={() => setTheme("dark")}
       >
-        <BsMoon className="text-header dark:text-gray-300" />
-      </button>
-      <button
-        type="button"
-        className={cn(
-          "w-[33px] h-[33px] p-2",
-          theme === "system" &&
-            "bg-black/10  rounded-full dark:bg-primary-light/70"
-        )}
-        onClick={() => setTheme("system")}
-      >
-        <FiMonitor className="text-header dark:text-gray-300" />
+        <BsMoon className="text-header dark:text-white" />
       </button>
     </div>
   );
