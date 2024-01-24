@@ -3,7 +3,7 @@ import Progress from "./progressbar";
 
 const TopPlat = () => {
   return (
-    <Card extra="max-w-[452px] hidden md:flex max-h-[448px] overflow-y-auto overflow-x-hidden items-center justify-center py-5 md:gap-4 gap-2">
+    <Card extra="max-w-[452px] hidden md:flex p-[20px] max-h-[448px] overflow-y-auto overflow-x-hidden items-center justify-center py-5 md:gap-4 gap-2">
       <div className="flex flex-col gap-2">
         <h2 className="text-semibold text-xl leading-6 text-black dark:text-[#34CAA5]">
           Book Bazaar

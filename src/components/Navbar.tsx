@@ -72,9 +72,7 @@ const Navbar = () => {
             <ArrowDown2 className="hidden md:flex" />
           </div>
         }
-        classNames={
-          "py-2 md:top-[50px]  w-max border rounded-full border-white"
-        }
+        classNames={"py-2 md:top-[50px] top-10 -left-[180px]  w-max"}
       >
         <div className="flex h-48 w-56 flex-col justify-start rounded-[20px] bg-white bg-cover bg-no-repeat shadow-xl shadow-shadow-500 dark:!bg-navy-700 dark:text-white dark:shadow-none">
           <div className="ml-4 mt-3">

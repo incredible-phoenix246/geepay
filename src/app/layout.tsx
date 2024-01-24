@@ -26,10 +26,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ThemeProvider>
-        <body className={`${plusJ.className} dark:!bg-navy-800`}>
+        <body className={`${plusJ.className} dark:!bg-navy-800 sm:max-w-375`}>
           <section className="w-full relative">
             <Sidebar />
-            <div className="flex w-full md:pl-[90px] lg:pl-[60px] flex-col h-full relative max-container pt-12 md:pt-0 ">
+            <div className="flex w-full md:pl-[80px] lg:pl-[60px] flex-col h-full relative max-container pt-12 md:pt-0 ">
               <Suspense fallback={<SkeletonNavbar />}>
                 <Navbar />
               </Suspense>

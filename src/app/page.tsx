@@ -12,11 +12,11 @@ const Home = () => {
     <div>
       <SalesTrend />
       <SalesTrendMob />
-      <div className="mt-3">
+      <div className="mt-3 flex w-full justify-between">
+        <Order />
         <TopPlat />
-        <TopPlatmob />
       </div>
-      <Order />
+      <TopPlatmob />
     </div>
   );
 };
