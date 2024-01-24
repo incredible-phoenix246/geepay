@@ -153,7 +153,7 @@ export const barChartOptionsDailyTraffic = {
   },
   yaxis: {
     // categories: ["jan", "feb", "mar", "april", "may", "june", "jul"],
-    show: false,
+    show: true,
     color: "black",
     labels: {
       show: true,
@@ -258,7 +258,7 @@ export const barChartOptionsDailyTraffic2 = {
   },
   yaxis: {
     // categories: ["jan", "feb", "mar", "april", "may", "june", "jul"],
-    show: false,
+    show: true,
     color: "black",
     labels: {
       show: true,

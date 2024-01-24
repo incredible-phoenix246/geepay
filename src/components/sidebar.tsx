@@ -40,7 +40,7 @@ const Sidebar = () => {
             className={cn(
               "flex items-center gap-x-5 py-2 px-3 h-[52px] text-[#3a3a3a] dark:text-gray-400 font-medium text-base transition-colors duration-300 cursor-pointer before:h-1 before:absolute before:right-1 before:top-0 before:transition-all before:duration-500",
               activeLink === link.link
-                ? "text-[#0D062D] dark:bg-primary-light/75 dark:text-white rounded outline-none before:w-full active-link"
+                ? "text-[#0D062D] dark:bg-primary-light/75 dark:text-white rounded outline-none before:w-full active-link dark:after:bg-white"
                 : "hover:bg-black/10 dark:hover:bg-color-dark/10 focus-visible:bg-black/5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-light"
             )}
             onClick={() => setActiveLink(link.link)}
@@ -48,7 +48,7 @@ const Sidebar = () => {
             <link.icon
               size={30}
               aria-hidden
-              color={activeLink === link.link ? "#0D062D" : "#B2ABAB"}
+              // color={activeLink === link.link ? "#0D062D" : "#B2ABAB"}
               variant={activeLink === link.link ? "Bulk" : "Outline"}
             />
 
@@ -88,7 +88,7 @@ const Sidebar = () => {
             <link.icon
               size={30}
               aria-hidden
-              color={activeLink === link.link ? "#0D062D" : "#B2ABAB"}
+              // color={activeLink === link.link ? "#0D062D" : "#B2ABAB"}
               variant={activeLink === link.link ? "Bulk" : "Outline"}
             />
 

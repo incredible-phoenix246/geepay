@@ -20,9 +20,9 @@ const Progress = (props: {
   const { value, color, width } = props;
   return (
     <div
-      className={`h-2 ${
+      className={`h-[12px] ${
         width ? width : "w-full"
-      } rounded-full bg-gray-200 dark:bg-navy-700`}
+      } rounded-full bg-gray-200 dark:bg-white`}
     >
       <div
         className={`flex h-full items-center justify-center rounded-full ${
