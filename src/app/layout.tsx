@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ThemeProvider>
-        <body className={plusJ.className}>
+        <body className={`${plusJ.className} dark:!bg-navy-800`}>
           <section className="w-full relative">
             <Sidebar />
             <div className="flex w-full md:pl-[90px] lg:pl-[60px] flex-col h-full relative max-container pt-12 md:pt-0 ">
