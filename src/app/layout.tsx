@@ -29,7 +29,7 @@ export default function RootLayout({
         <body className={plusJ.className}>
           <section className="w-full relative">
             <Sidebar />
-            <div className="flex w-full pl-[60px] flex-col h-full relative max-container pt-12 md:pt-0 ">
+            <div className="flex w-full md:pl-[90px] lg:pl-[60px] flex-col h-full relative max-container pt-12 md:pt-0 ">
               <Suspense fallback={<SkeletonNavbar />}>
                 <Navbar />
               </Suspense>

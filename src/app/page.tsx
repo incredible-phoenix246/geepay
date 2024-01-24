@@ -1,7 +1,16 @@
+"use client";
 import React from "react";
+import SalesTrend from "@/components/salestrend";
+
+import SalesTrendMob from "@/components/mobsalestrend";
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div>
+      <SalesTrend />
+      <SalesTrendMob />
+    </div>
+  );
 };
 
 export default Home;
