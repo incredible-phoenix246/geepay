@@ -56,7 +56,7 @@ const Progress = (props: {
             ? "bg-gray-500 dark:bg-gray-400"
             : "bg-brand-500 dark:bg-brand-400"
         }`}
-        style={{ width: `${value}%` }}
+        style={{ width: `${value}%`, transition: "width 0.5s ease-in-out" }}
       />
     </div>
   );
