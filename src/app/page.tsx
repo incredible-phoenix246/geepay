@@ -13,8 +13,8 @@ import { BoxTick, I3DRotate } from "iconsax-react";
 
 const Home = () => {
   return (
-    <div>
-      <div className="flex items-center justify-between">
+    <section className="">
+      <div className="flex items-center w-full justify-between md:pr-5">
         <SalesTrend />
         <div className="mt-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-2">
           <Widget
@@ -45,7 +45,7 @@ const Home = () => {
         <TopPlat />
       </div>
       <TopPlatmob />
-    </div>
+    </section>
   );
 };
 
