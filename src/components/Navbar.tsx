@@ -8,6 +8,7 @@ import {
   Calendar,
   Notification,
   ArrowDown2,
+  HambergerMenu,
 } from "iconsax-react";
 import Dropdown from "./dropdown";
 import Image from "next/image";
@@ -43,7 +44,7 @@ const Navbar = () => {
         leftIcon={<SearchNormal1 />}
         type="text"
         placeholder="Search..."
-        className="rounded-2xl w-[250px] dark:!bg-white "
+        className="rounded-2xl w-[250px] dark:!bg-white hidden md:flex "
         // value={searchValue}
         // onChange={handleInputChange}
       />

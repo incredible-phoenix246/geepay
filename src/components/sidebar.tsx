@@ -20,7 +20,7 @@ const Sidebar = () => {
   }, [pathname]);
 
   return (
-    <section className="bg-white dark:bg-primary  z-[50] hidden  w-[88px]  hover:w-[150px] hover:p-4 transition-all duration-300 py-4 min-[1140px]:p-4 md:flex flex-col sidebar-scroll gap-y-4 items-center justify-between h-screen min-[1140px]:items-start fixed left-0 top-0 overflow-y-auto border-r border-gray-200 sidebar-scroll overflow-x-hidden group select-none  dark:!bg-navy-800 dark:text-white">
+    <section className="bg-white  z-[50] hidden  w-[88px]  hover:w-[150px] hover:p-4 transition-all duration-300 py-4 min-[1140px]:p-4 md:flex flex-col sidebar-scroll gap-y-4 items-center justify-between h-screen min-[1140px]:items-start fixed left-0 top-0 overflow-y-auto border-r border-gray-200 sidebar-scroll overflow-x-hidden group select-none  dark:!bg-navy-800 dark:text-white">
       <Link href="/" className="group-hover:w-full">
         <FlashCircle color="#34CAA5" variant="Bold" size={50} />
       </Link>
@@ -60,9 +60,6 @@ const Sidebar = () => {
         ))}
 
         <span className="bg-[#8e8e8e] dark:bg-primary-light/70 w-full max-w-[245px] h-[1px] " />
-        {/* <div style={{ transform: "rotate(90deg)" }}>
-          <DarkModeSwitcher />
-        </div> */}
 
         <ThemeButton />
 

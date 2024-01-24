@@ -39,7 +39,7 @@ export const SIDEBAR_LINKS: PagesProps[] = [
     id: 3,
     label: "Profile",
     icon: Profile2User,
-    link: "admin-projects",
+    link: "profile",
   },
   {
     id: 4,
