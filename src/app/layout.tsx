@@ -3,6 +3,9 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.scss";
 import Sidebar from "@/components/sidebar";
 import ThemeProvider from "@/context/themectx";
+import Navbar from "@/components/Navbar";
+import SkeletonNavbar from "@/components/skeltonav";
+import { Suspense } from "react";
 
 const plusJ = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -24,8 +27,15 @@ export default function RootLayout({
     <html lang="en">
       <ThemeProvider>
         <body className={plusJ.className}>
-          <Sidebar />
-          {children}
+          <section className="w-full relative">
+            <Sidebar />
+            <div className="flex w-full pl-[60px] flex-col h-full relative max-container pt-12 md:pt-0 ">
+              <Suspense fallback={<SkeletonNavbar />}>
+                <Navbar />
+              </Suspense>
+              {children}
+            </div>
+          </section>
         </body>
       </ThemeProvider>
     </html>

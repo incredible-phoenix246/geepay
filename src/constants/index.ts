@@ -3,7 +3,7 @@ import {
   Icon,
   ArrowCircleRight2,
   Setting2,
-  Briefcase,
+  DiscountShape,
   People,
   WalletMoney,
   Logout,
@@ -48,20 +48,20 @@ export const SIDEBAR_LINKS: PagesProps[] = [
     link: "admin-clients",
   },
   {
-    id: 6,
+    id: 5,
     label: "Discount",
-    icon: WalletMoney,
+    icon: DiscountShape,
     link: "admin-transactions",
   },
   {
-    id: 7,
+    id: 6,
     label: "Information",
     icon: InfoCircle,
     link: "admin-messages",
   },
 
   {
-    id: 9,
+    id: 7,
     label: "Notifications",
     icon: Notification,
     link: "admin-notifications",

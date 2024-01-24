@@ -45,7 +45,7 @@ const Sidebar = () => {
             onClick={() => setActiveLink(link.link)}
           >
             <link.icon
-              size={40}
+              size={30}
               aria-hidden
               color={activeLink === link.link ? "#0D062D" : "#B2ABAB"}
               variant={activeLink === link.link ? "Bulk" : "Outline"}
@@ -82,7 +82,7 @@ const Sidebar = () => {
             onClick={() => setActiveLink(link.link)}
           >
             <link.icon
-              size={40}
+              size={30}
               aria-hidden
               color={activeLink === link.link ? "#0D062D" : "#B2ABAB"}
               variant={activeLink === link.link ? "Bulk" : "Outline"}

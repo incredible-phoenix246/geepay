@@ -8,10 +8,9 @@
   box-sizing: border-box;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.max-container {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .active-link::after {
@@ -39,7 +38,7 @@ input[type='number']::-webkit-outer-spin-button {
   width: 6px;
 }
 .sidebar-scroll::-webkit-scrollbar-thumb {
-  background: #0D062D;
+  background: #34CAA5;
 }
 ::-webkit-scrollbar {
   width: 8px;
