@@ -4,6 +4,7 @@ import { SIDEBAR_LINKS, Button_Link } from "@/constants";
 import { cn } from "@/utils";
 import { FlashCircle } from "iconsax-react";
 import Link from "next/link";
+import ThemeButton from "./themebtn";
 import { usePathname, useRouter } from "next/navigation";
 
 const Sidebar = () => {
@@ -58,6 +59,7 @@ const Sidebar = () => {
         ))}
 
         <span className="bg-[#8e8e8e] dark:bg-primary-light/70 w-full max-w-[245px] h-[1px] " />
+        <ThemeButton />
       </ul>
       <ul className="flex flex-col gap-y-4">
         {Button_Link.map((link) => (

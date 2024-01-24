@@ -10,14 +10,8 @@ const SalesTrendMob = () => {
     <Card extra="pb-7 p-[20px] md:hidden sm:flex max-w-[806px]">
       <div className="flex flex-row justify-between">
         <div className="ml-1 pt-2">
-          <p className="text-sm font-medium leading-4 text-gray-600">
-            Sales Trends
-          </p>
           <p className="text-[34px] font-bold text-navy-700 dark:text-white">
-            2.579{" "}
-            <span className="text-sm font-medium leading-6 text-gray-600">
-              Visitors
-            </span>
+            Sales Trends
           </p>
         </div>
         <div className="mt-2 flex items-start">

@@ -164,7 +164,7 @@ export const barChartOptionsDailyTraffic = {
     },
   },
   grid: {
-    show: false,
+    show: true,
     strokeDashArray: 5,
     yaxis: {
       lines: {
@@ -269,7 +269,7 @@ export const barChartOptionsDailyTraffic2 = {
     },
   },
   grid: {
-    show: false,
+    show: true,
     strokeDashArray: 5,
     yaxis: {
       lines: {
