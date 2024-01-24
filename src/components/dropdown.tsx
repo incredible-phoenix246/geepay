@@ -22,7 +22,7 @@ function useOutsideAlerter(ref: any, setX: any): void {
 
 const Dropdown = (props: {
   button: JSX.Element;
-  children: JSX.Element;
+  children: React.ReactNode;
   classNames: string;
   animation?: string;
 }) => {
