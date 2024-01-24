@@ -12,6 +12,7 @@ import {
 import Dropdown from "./dropdown";
 import Image from "next/image";
 import avatar from "../../public/assets/avatar.png";
+import Link from "next/link";
 
 const Navbar = () => {
   const [todayDate, setTodayDate] = useState("");
@@ -51,59 +52,59 @@ const Navbar = () => {
         <h2>{todayDate}</h2>
         <Notification />
       </div>
-      <div className="flex space-x-2 border rounded-full p-2 items-center justify-center ">
-        <Dropdown
-          button={
-            <div className="flex space-x-2 dark:!text-white">
-              <Image
-                width="20"
-                height="20"
-                className="h-10 w-10 rounded-full"
-                src={avatar}
-                alt="Elon Musk"
-              />
-              <div>
-                <h2>Phoenix</h2>
-                <span>phoenix@gmail.com</span>
-              </div>
-              <ArrowDown2 />
+      <Dropdown
+        button={
+          <div className="flex space-x-2 dark:!text-white items-center justify-center">
+            <Image
+              width="20"
+              height="20"
+              className="h-10 w-10 rounded-full"
+              src={avatar}
+              alt="Elon Musk"
+            />
+            <div>
+              <h2>Phoenix</h2>
+              <span>phoenix@gmail.com</span>
             </div>
-          }
-          classNames={"py-2 top-8 -left-[180px] w-max"}
-        >
-          <div className="flex h-48 w-56 flex-col justify-start rounded-[20px] bg-white bg-cover bg-no-repeat shadow-xl shadow-shadow-500 dark:!bg-navy-700 dark:text-white dark:shadow-none">
-            <div className="ml-4 mt-3">
-              <div className="flex items-center gap-2">
-                <p className="text-sm font-bold text-navy-700 dark:text-white">
-                  👋 Hey, Phoenix
-                </p>{" "}
-              </div>
-            </div>
-            <div className="mt-3 h-px w-full bg-gray-200 dark:bg-white/20 " />
-
-            <div className="ml-4 mt-3 flex flex-col">
-              <a
-                href=" "
-                className="text-sm text-gray-800 dark:text-white hover:dark:text-white"
-              >
-                Profile Settings
-              </a>
-              <a
-                href=" "
-                className="mt-3 text-sm text-gray-800 dark:text-white hover:dark:text-white"
-              >
-                Newsletter Settings
-              </a>
-              <a
-                href=" "
-                className="mt-3 text-sm font-medium text-red-500 hover:text-red-500"
-              >
-                Log Out
-              </a>
+            <ArrowDown2 />
+          </div>
+        }
+        classNames={
+          "py-2 md:top-[50px]  w-max border rounded-full border-white"
+        }
+      >
+        <div className="flex h-48 w-56 flex-col justify-start rounded-[20px] bg-white bg-cover bg-no-repeat shadow-xl shadow-shadow-500 dark:!bg-navy-700 dark:text-white dark:shadow-none">
+          <div className="ml-4 mt-3">
+            <div className="flex items-center gap-2">
+              <p className="text-sm font-bold text-navy-700 dark:text-white">
+                👋 Hey, Phoenix
+              </p>{" "}
             </div>
           </div>
-        </Dropdown>
-      </div>
+          <div className="mt-3 h-px w-full bg-gray-200 dark:bg-white/20 " />
+
+          <div className="ml-4 mt-3 flex flex-col">
+            <Link
+              href="/profile"
+              className="text-sm text-gray-800 dark:text-white hover:dark:text-white"
+            >
+              Profile Settings
+            </Link>
+            <a
+              href=" "
+              className="mt-3 text-sm text-gray-800 dark:text-white hover:dark:text-white"
+            >
+              Newsletter Settings
+            </a>
+            <a
+              href=" "
+              className="mt-3 text-sm font-medium text-red-500 hover:text-red-500"
+            >
+              Log Out
+            </a>
+          </div>
+        </div>
+      </Dropdown>
     </header>
   );
 };

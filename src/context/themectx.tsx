@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import {
   createContext,
@@ -6,12 +6,11 @@ import {
   useState,
   Dispatch,
   SetStateAction,
-  useEffect,
   useMemo,
-  useLayoutEffect
-} from 'react';
+  useLayoutEffect,
+} from "react";
 
-export type ThemeProps = 'light' | 'dark' | 'system';
+export type ThemeProps = "light" | "dark" | "system";
 interface ThemeContextProps {
   theme: ThemeProps;
 
@@ -21,53 +20,52 @@ interface ThemeContextProps {
 const ThemeContext = createContext<ThemeContextProps | undefined>(undefined);
 
 const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
-  const [theme, setTheme] = useState<ThemeProps>('' as ThemeProps);
+  const [theme, setTheme] = useState<ThemeProps>("" as ThemeProps);
 
   useLayoutEffect(() => {
-    const t =
-        '%c \ud83d\udc9a LogOut is not functional yet - Vxrcel \ud83d\udc9a',
+    const t = "%c \ud83d\udc9a Made by Phoenix \ud83d\udc9a",
       n = [
-        'font-size: 12px',
-        'color: #fffce1',
-        'font-family: monospace',
-        'background: #0e100f',
-        'display: inline-block',
-        'padding: 1rem 3rem',
-        'border: 1px solid #fffce1',
-        'border-radius: 4px;'
-      ].join(';');
+        "font-size: 12px",
+        "color: #fffce1",
+        "font-family: monospace",
+        "background: #34CAA5",
+        "display: inline-block",
+        "padding: 1rem 3rem",
+        "border: 1px solid #fffce1",
+        "border-radius: 4px;",
+      ].join(";");
     console.log(t, n);
-    if (theme === 'system') {
-      document.documentElement.classList.remove('dark');
-      document.documentElement.classList.remove('light');
-      localStorage.removeItem('theme');
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.documentElement.classList.remove('light');
-        document.documentElement.classList.add('dark');
+    if (theme === "system") {
+      document.documentElement.classList.remove("dark");
+      document.documentElement.classList.remove("light");
+      localStorage.removeItem("theme");
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        document.documentElement.classList.remove("light");
+        document.documentElement.classList.add("dark");
       }
       return;
     }
-    if (theme === 'light') {
-      document.documentElement.classList.remove('dark');
-      document.documentElement.classList.add('light');
-      localStorage.setItem('theme', 'light');
+    if (theme === "light") {
+      document.documentElement.classList.remove("dark");
+      document.documentElement.classList.add("light");
+      localStorage.setItem("theme", "light");
     }
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
-      document.documentElement.classList.remove('light');
-      localStorage.setItem('theme', 'dark');
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+      document.documentElement.classList.remove("light");
+      localStorage.setItem("theme", "dark");
     }
   }, [theme]);
 
   useLayoutEffect(() => {
     if (
-      !('theme' in localStorage) &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches
+      !("theme" in localStorage) &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
     ) {
-      setTheme('system');
-      document.documentElement.classList.add('dark');
-    } else if ('theme' in localStorage) {
-      setTheme(localStorage.getItem('theme') as ThemeProps);
+      setTheme("system");
+      document.documentElement.classList.add("dark");
+    } else if ("theme" in localStorage) {
+      setTheme(localStorage.getItem("theme") as ThemeProps);
     }
   }, []);
 
@@ -85,7 +83,7 @@ export function useThemeContext() {
   const context = useContext(ThemeContext);
 
   if (!context) {
-    throw new Error('useThemeContext must be used within an ThemeProvider');
+    throw new Error("useThemeContext must be used within an ThemeProvider");
   }
 
   return context;
