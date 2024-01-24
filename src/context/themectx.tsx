@@ -10,7 +10,7 @@ import {
   useLayoutEffect,
 } from "react";
 
-export type ThemeProps = "light" | "dark" | "system";
+export type ThemeProps = "light" | "dark";
 interface ThemeContextProps {
   theme: ThemeProps;
 
@@ -35,16 +35,7 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
         "border-radius: 4px;",
       ].join(";");
     console.log(t, n);
-    if (theme === "system") {
-      document.documentElement.classList.remove("dark");
-      document.documentElement.classList.remove("light");
-      localStorage.removeItem("theme");
-      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        document.documentElement.classList.remove("light");
-        document.documentElement.classList.add("dark");
-      }
-      return;
-    }
+
     if (theme === "light") {
       document.documentElement.classList.remove("dark");
       document.documentElement.classList.add("light");
@@ -58,13 +49,7 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   }, [theme]);
 
   useLayoutEffect(() => {
-    if (
-      !("theme" in localStorage) &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-    ) {
-      setTheme("system");
-      document.documentElement.classList.add("dark");
-    } else if ("theme" in localStorage) {
+    if ("theme" in localStorage) {
       setTheme(localStorage.getItem("theme") as ThemeProps);
     }
   }, []);

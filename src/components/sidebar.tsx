@@ -6,6 +6,7 @@ import { FlashCircle } from "iconsax-react";
 import Link from "next/link";
 import ThemeButton from "./themebtn";
 import { usePathname, useRouter } from "next/navigation";
+import DarkModeSwitcher from "./switch";
 
 const Sidebar = () => {
   const pathname = usePathname();
@@ -59,6 +60,10 @@ const Sidebar = () => {
         ))}
 
         <span className="bg-[#8e8e8e] dark:bg-primary-light/70 w-full max-w-[245px] h-[1px] " />
+        {/* <div style={{ transform: "rotate(90deg)" }}>
+          <DarkModeSwitcher />
+        </div> */}
+
         <ThemeButton />
 
         <span className="bg-[#8e8e8e] dark:bg-primary-light/70 w-full max-w-[245px] h-[1px] " />
