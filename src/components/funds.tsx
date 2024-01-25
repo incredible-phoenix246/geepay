@@ -3,7 +3,7 @@ import * as React from "react";
 function TotalRefundComponent() {
   return (
     <form
-      className="justify-center items-stretch border bg-white flex dark:!bg-navy-800 dark:text-white   max-w-[239px] flex-col p-4 rounded-2xl border-solid border-slate-100 
+      className="justify-center items-stretch border bg-white flex dark:!bg-navy-800 dark:text-white   max-w-[239px] flex-col p-4 rounded-2xl border-solid border-slate-100"
       aria-label="Total Refund"
     >
       <header className="justify-between items-stretch flex gap-5">
