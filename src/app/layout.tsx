@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.scss";
 import ThemeProvider from "@/context/themectx";
-import Navbar from "@/components/Navbar";
+import Nav from "@/components/nav";
 import SkeletonNavbar from "@/components/skeltonav";
 import { Suspense } from "react";
+import Header from "@/components/header";
 import SideBar from "@/components/SideBar";
 import StateCtxProvider from "@/context/statectx";
 
@@ -34,9 +35,9 @@ export default function RootLayout({
             <section className="flex h-full w-full">
               <SideBar />
               <div className="ml-[80px]">
-                {/* <Suspense fallback={<SkeletonNavbar />}>
-                  <Navbar />
-                </Suspense> */}
+                <Suspense fallback={<SkeletonNavbar />}>
+                  <Nav brandText={""} />
+                </Suspense>
                 {children}
               </div>
             </section>

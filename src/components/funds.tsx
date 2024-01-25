@@ -1,17 +1,18 @@
 import * as React from "react";
+import Image from "next/image";
+import { BoxTick, I3DRotate, ShoppingCart, Coin1 } from "iconsax-react";
 
 function TotalRefundComponent() {
   return (
-    <form
+    <div
       className="justify-center items-stretch border bg-white flex dark:!bg-navy-800 dark:text-white   max-w-[239px] flex-col p-4 rounded-2xl border-solid border-slate-100"
       aria-label="Total Refund"
     >
-      <header className="justify-between items-stretch flex gap-5">
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/717195983fe895e91c420ef1e0019e1ba7fe56b9562aaed9e3b5fa9ff9afb25a?apiKey=252f8d5a726747838fcb04939a832fc3&"
-          className="aspect-square object-contain object-center w-10 overflow-hidden shrink-0 max-w-full"
-          alt="Logo Image"
+      <div className="justify-between items-stretch flex gap-5">
+        <I3DRotate
+          variant="Bulk"
+          color="#34CAA5"
+          className="aspect-square object-contain object-center w-10 h-10 overflow-hidden shrink-0 max-w-full border rounded-full p-1"
         />
         <img
           loading="lazy"
@@ -19,7 +20,7 @@ function TotalRefundComponent() {
           className="aspect-[3.25] object-contain object-center w-[104px] overflow-hidden self-center shrink-0 max-w-full my-auto"
           alt="Banner Image"
         />
-      </header>
+      </div>
       <h2 className="text-zinc-500 text-lg font-medium leading-6 mt-2.5">
         Total Refund
       </h2>
@@ -48,7 +49,7 @@ function TotalRefundComponent() {
           vs. previous month
         </div>
       </div>
-    </form>
+    </div>
   );
 }
 

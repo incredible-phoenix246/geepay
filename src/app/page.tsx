@@ -12,6 +12,7 @@ import IncomeComponent from "@/components/income";
 import SalesDashboard from "@/components/sales";
 import TotalRefundComponent from "@/components/funds";
 import SalesStatistics from "@/components/stats";
+import Order2 from "@/components/order2";
 
 const Home = () => {
   return (
@@ -19,30 +20,10 @@ const Home = () => {
       <div className="flex items-center w-full justify-between md:pr-5">
         <SalesTrend />
         <div className="mt-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-2">
-          {/* <Widget
-            icon={<BoxTick className="h-7 w-7" variant="Bulk"/>}
-            title={"Earnings"}
-            subtitle={"$340.5"}
-          /> */}
-          <IncomeComponent />
-          <SalesDashboard />
+          <Order2 />
           <TotalRefundComponent />
           <SalesStatistics />
-          {/* <Widget
-            icon={<I3DRotate className="h-6 w-6" variant="Bulk" />}
-            title={"Spend this month"}
-            subtitle={"$642.39"}
-          /> */}
-          {/* <Widget
-            icon={<ShoppingCart className="h-7 w-7" variant="Bulk" />}
-            title={"Sales"}
-            subtitle={"$574.34"}
-          /> */}
-          {/* <Widget
-            icon={<Coin1 className="h-6 w-6" />}
-            title={"Your Balance"}
-            subtitle={"$1,000"}
-          /> */}
+          <IncomeComponent />
         </div>
       </div>
       <SalesTrendMob />
