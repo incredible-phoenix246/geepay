@@ -24,7 +24,7 @@ const Home = () => {
         </div>
       </div>
       <SalesTrendMob />
-      <div className="mt-3 flex w-full justify-between">
+      <div className="mt-3 flex w-full justify-between gap-5">
         <Order />
         <TopPlat />
       </div>
