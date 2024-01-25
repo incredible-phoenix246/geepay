@@ -3,7 +3,7 @@ import React from "react";
 function SalesDashboard() {
   return (
     <div
-      className="justify-center items-stretch border bg-white flex max-w-[239px] flex-col p-4 rounded-2xl border-solid border-slate-100"
+      className="justify-center items-stretch border bg-white flex max-w-[239px] flex-col p-4 rounded-2xl border-solid border-slate-100 dark:!bg-navy-800 dark:text-white"
       role="tabpanel"
       aria-label="Sales Dashboard"
     >
