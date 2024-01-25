@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 const Profile = () => {
   return (
     <>
-      <div className="overflow-hidden rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:!bg-navy-800">
+      <div className="overflow-hidden rounded-sm bg-white shadow-default dark:border-strokedark dark:!bg-navy-800">
         <div className="relative z-20 h-35 md:h-65">
           <Image
             src="/assets/cover.jpg"
