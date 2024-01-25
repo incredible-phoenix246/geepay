@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState, useRef } from "react";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -44,35 +45,12 @@ const Nav = (props: { brandText: string }) => {
     isVisible: profileDropdown,
     setIsVisible: setProfileDropdown,
   } = useVisible();
+  const pathname = usePathname();
 
   return (
     <nav className="sticky top-0 z-40 flex flex-row w-full items-center justify-between rounded-xl bg-white/10 p-2 backdrop-blur-xl dark:bg-[#0b14374d] sm:min-h-[70px]">
       <div className="ml-[6px]">
-        <div className="h-6 w-[224px] pt-1">
-          <Link
-            className="text-sm font-normal text-navy-700 hover:underline dark:text-white dark:hover:text-white"
-            href=" "
-          >
-            Pages
-            <span className="mx-1 text-sm text-navy-700 hover:text-navy-700 dark:text-white">
-              /{" "}
-            </span>
-          </Link>
-          <NavLink
-            className="text-sm font-normal capitalize text-navy-700 hover:underline dark:text-white dark:hover:text-white"
-            href="#"
-          >
-            {brandText}
-          </NavLink>
-        </div>
-        <p className="shrink text-[33px] capitalize text-navy-700 dark:text-white">
-          <NavLink
-            href="#"
-            className="font-bold capitalize hover:text-navy-700 dark:hover:text-white"
-          >
-            {brandText}
-          </NavLink>
-        </p>
+        <Pathname />
       </div>
       <div className="relative mt-[3px] md:flex hidden h-[61px] flex-grow items-center justify-around gap-2 rounded-full bg-white py-2 shadow-xl shadow-shadow-500 dark:!bg-navy-800 dark:shadow-none md:flex-grow-0 md:gap-1">
         <div className="flex h-[61px] items-center rounded-full bg-lightPrimary text-navy-700 dark:bg-navy-900 dark:text-white xl:w-[225px]">
@@ -184,3 +162,21 @@ const Nav = (props: { brandText: string }) => {
 };
 
 export default Nav;
+
+export function Pathname() {
+  const pathname = usePathname();
+  let formattedPathname;
+
+  if (pathname === "/") {
+    formattedPathname = "Dashboard";
+  } else {
+    formattedPathname =
+      pathname.slice(1).charAt(0).toUpperCase() + pathname.slice(2);
+  }
+
+  return (
+    <div className="dark:text-white md:text-3xl text-lg">
+      {formattedPathname}
+    </div>
+  );
+}

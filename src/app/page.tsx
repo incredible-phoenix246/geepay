@@ -9,7 +9,7 @@ import Order from "@/components/order";
 import Widget from "@/components/widgets";
 import { BoxTick, I3DRotate, ShoppingCart, Coin1 } from "iconsax-react";
 import IncomeComponent from "@/components/income";
-import SalesDashboard from "@/components/sales";
+import MobileOrder from "@/components/ordersm";
 import TotalRefundComponent from "@/components/funds";
 import SalesStatistics from "@/components/stats";
 import Order2 from "@/components/order2";
@@ -31,6 +31,7 @@ const Home = () => {
         <Order />
         <TopPlat />
       </div>
+      <MobileOrder />
       <TopPlatmob />
     </section>
   );

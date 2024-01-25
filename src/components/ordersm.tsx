@@ -13,7 +13,7 @@ function Order() {
     <>
       <section
         className={cn(
-          "w-full ml-[20px] hidden dark:!bg-navy-800 dark:text-white md:flex flex-col justify-center rounded-xl  max-w-[806px] max-h-[418px]"
+          "w-full ml-[20px] md:hidden dark:!bg-navy-800 dark:text-white flex flex-col justify-center rounded-xl  max-w-[350px] max-h-[418px] overflow-x-auto"
         )}
       >
         <div className="w-full flex items-center justify-between px-5 py-2">
@@ -28,17 +28,17 @@ function Order() {
           </div>
         </div>
         <div className="flex flex-nowrap items-center   w-full h-[56px] border-b border-gray-200 ">
-          <span className="w-full pl-3 max-w-[230px] flex items-center justify-start h-full">
+          <span className="w-full pl-1 max-w-[230px] flex items-center justify-start h-full">
             Name
           </span>
 
-          <span className=" font-medium w-full max-w-[101px] flex items-center  h-full justify-start">
+          <span className=" font-medium w-full max-w-[80px] flex items-center  h-full justify-start">
             Status
           </span>
-          <span className=" font-medium w-full max-w-[97px] flex items-center justify-center h-full">
+          <span className=" font-medium w-full max-w-[97px] flex items-center justify-start h-full">
             Date
           </span>
-          <span className=" font-medium w-full max-w-[150px] flex items-center justify-center h-full">
+          <span className=" font-medium w-full max-w-[150px] flex items-center justify-start h-full">
             Amount
           </span>
           <span className=" font-medium w-full max-w-[97px] flex items-center justify-center h-full">
@@ -54,7 +54,7 @@ function Order() {
                   "flex flex-nowrap  items-center  w-full h-[70px]  border-b border-gray-200 py-1 transition-all duration-300"
                 )}
               >
-                <span className="w-full max-w-[60px]  justify-center h-full flex items-center px-1 ">
+                {/* <span className="w-full max-w-[60px]  justify-center h-full flex items-center px-1 ">
                   <Image
                     src={student.avatar}
                     alt={"avatar"}
@@ -62,8 +62,8 @@ function Order() {
                     height="40"
                     className=" w-10 h-10 rounded-full"
                   />
-                </span>
-                <span className="text-[18px] w-full max-w-[167px] flex items-center justify-start  h-full text-center">
+                </span> */}
+                <span className="text-[18px] w-full max-w-[167px] flex items-center justify-start  h-full pl-1">
                   {student.name}
                 </span>
 
@@ -95,7 +95,7 @@ function Order() {
                     // href={`/student/${student.id}`}
                   >
                     <DocumentDownload />
-                    <span>View</span>
+                    {/* <span>View</span> */}
                   </button>
                 </span>
               </div>

@@ -5,7 +5,7 @@ import ThemeProvider from "@/context/themectx";
 import Nav from "@/components/nav";
 import SkeletonNavbar from "@/components/skeltonav";
 import { Suspense } from "react";
-import Header from "@/components/header";
+import { usePathname } from "next/navigation";
 import SideBar from "@/components/SideBar";
 import StateCtxProvider from "@/context/statectx";
 

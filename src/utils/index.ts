@@ -15,14 +15,15 @@ export const cn = (...classes: ClassValue[]) => {
  */
 export const shrinkString = ({
   str,
-  len
+  len,
 }: {
   str: string;
   len: number;
 }): string => {
-  if (!str) return '';
+  if (!str) return "";
   if (str.length > len) {
-    return str.substring(0, len) + '...';
+    return str.substring(0, len) + "...";
   }
   return str;
 };
+
