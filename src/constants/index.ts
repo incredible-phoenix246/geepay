@@ -64,7 +64,7 @@ export const SIDEBAR_LINKS: PagesProps[] = [
     id: 7,
     label: "Notifications",
     icon: Notification,
-    link: "notifications",
+    link: "notification",
   },
 ];
 

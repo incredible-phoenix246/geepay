@@ -34,9 +34,9 @@ export default function RootLayout({
             <section className="flex h-full w-full">
               <SideBar />
               <div className="ml-[80px]">
-                <Suspense fallback={<SkeletonNavbar />}>
+                {/* <Suspense fallback={<SkeletonNavbar />}>
                   <Navbar />
-                </Suspense>
+                </Suspense> */}
                 {children}
               </div>
             </section>
