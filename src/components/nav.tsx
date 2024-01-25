@@ -99,7 +99,7 @@ const Nav = (props: { brandText: string }) => {
         <Notification />
       </div>
       <div
-        className="items-center justify-center border md:flex gap-3 px-2 py-1.5 rounded-full border-solid border-zinc-300 dark:text-white hidden cursor-pointer"
+        className="items-center justify-center border flex gap-3 md:px-2 md:py-1.5 rounded-full border-solid border-zinc-300 dark:text-white  cursor-pointer"
         onClick={() => setProfileDropdown(true)}
       >
         <div className="flex justify-between gap-2 items-center">
@@ -116,26 +116,13 @@ const Nav = (props: { brandText: string }) => {
               className={`w-full h-full object-cover rounded-full`}
             />
           </div>
-          <div className="items-center flex grow basis-[0%] flex-col whitespace-nowrap text-right">
+          <div className="items-center grow basis-[0%] flex-col whitespace-nowrap text-right hidden md:flex">
             <div className="text-zinc-800 text-base">Phoenix</div>
             <div className="text-zinc-500 text-sm mt-1">phoenix@gmail.com</div>
           </div>
         </div>
 
         <ArrowDown2 className="hidden md:flex" />
-      </div>
-      <div
-        className="cursor-pointer w-[32px] h-[32px] hidden"
-        onClick={() => setProfileDropdown(true)}
-      >
-        <Image
-          loading="lazy"
-          src="/assets/user.jpg"
-          alt="profile"
-          width={32}
-          height={32}
-          className={`w-full h-full object-cover rounded-full`}
-        />
       </div>
 
       {isDropdownVisible && (
@@ -150,7 +137,7 @@ const Nav = (props: { brandText: string }) => {
             boxShadow:
               "0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 1px 3px 0px rgba(16, 24, 40, 0.10)",
           }}
-          className="absolute bg-white rounded-lg w-[15rem] p-3 right-8 top-[80px] z-50  dark:!bg-navy-800 dark:text-white "
+          className="absolute bg-white rounded-lg w-[15rem] p-3 right-0 top-[50px] md:top-[80px] z-50  dark:!bg-navy-800 dark:text-white "
         >
           <div className="flex flex-col gap-2">
             <div className="flex items-center gap-3 border-b border-b-Grey-G30 pb-3 px-2">
