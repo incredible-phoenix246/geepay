@@ -124,7 +124,7 @@ const Profile = () => {
                 About Me
               </h4>
               <p className="mt-4.5">
-                I is a professional with expertise in both Cyber Security and
+                I am a professional with expertise in both Cyber Security and
                 Frontend Development. With diverse skill set that combines
                 security analysis and web development. I prefers using Python as
                 their scripting language, TypeScript for any web related issues.
