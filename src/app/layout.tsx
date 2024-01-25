@@ -6,6 +6,8 @@ import ThemeProvider from "@/context/themectx";
 import Navbar from "@/components/Navbar";
 import SkeletonNavbar from "@/components/skeltonav";
 import { Suspense } from "react";
+import SideBar from "@/components/side";
+import StateCtxProvider from "@/context/statectx";
 
 const plusJ = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -25,19 +27,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <ThemeProvider>
-        <body className={`${plusJ.className}`}>
-          <section  className="flex h-full w-full bg-background-100 dark:bg-background-900">
-            <Sidebar />
-            <div className="flex w-full md:pl-[80px] flex-col h-full relative max-container pt-12 md:pt-0 ">
-              <Suspense fallback={<SkeletonNavbar />}>
-                <Navbar />
-              </Suspense>
-              {children}
-            </div>
-          </section>
-        </body>
-      </ThemeProvider>
+      <StateCtxProvider>
+        <ThemeProvider>
+          <body
+            className={`${plusJ.className}  bg-background-100 dark:bg-background-900`}
+          >
+            <section className="flex h-full w-full">
+              <SideBar />
+              <div className="">
+                <Suspense fallback={<SkeletonNavbar />}>
+                  <Navbar />
+                </Suspense>
+                {children}
+              </div>
+            </section>
+          </body>
+        </ThemeProvider>
+      </StateCtxProvider>
     </html>
   );
 }

@@ -31,7 +31,7 @@ export const SIDEBAR_LINKS: PagesProps[] = [
 
   {
     id: 2,
-    label: "TrendUp",
+    label: "Analysis",
     icon: TrendUp,
     link: "home",
   },
@@ -64,7 +64,7 @@ export const SIDEBAR_LINKS: PagesProps[] = [
     id: 7,
     label: "Notifications",
     icon: Notification,
-    link: "admin-notifications",
+    link: "notifications",
   },
 ];
 
@@ -453,3 +453,33 @@ export const users = [
     amount: "$80,000",
   },
 ];
+
+type SidebarFooterProps = {
+  id?: number;
+  label: string;
+  icon: Icon;
+  link: "open-sidebar" | "settings" | "logout";
+};
+export const SIDEBAR_FOO_LINKS: SidebarFooterProps[] = [
+  {
+    id: 1,
+    label: "Open sidebar",
+    icon: ArrowCircleRight2,
+    link: "open-sidebar",
+  },
+  {
+    id: 2,
+    label: "Settings",
+    icon: Setting2,
+    link: "settings",
+  },
+
+  {
+    id: 3,
+    label: "Logout",
+    icon: Logout,
+    link: "logout",
+  },
+];
+
+export const TYPESidebarLinks = SIDEBAR_LINKS.map((link) => link.link);

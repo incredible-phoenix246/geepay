@@ -4,7 +4,26 @@ import { SIDEBAR_LINKS, Button_Link } from "@/constants";
 import { cn } from "@/utils";
 import { FlashCircle } from "iconsax-react";
 import Link from "next/link";
-import ThemeButton from "./themebtn";
+import ThemeButton from "/**
+ * Shrink a string to a specified length(len).
+ * @function shrinkString
+ * @param {string} str
+ * @param {number} len
+ * @returns {string}
+ */
+export const shrinkString = ({
+  str,
+  len
+}: {
+  str: string;
+  len: number;
+}): string => {
+  if (!str) return '';
+  if (str.length > len) {
+    return str.substring(0, len) + '...';
+  }
+  return str;
+};";
 import { usePathname, useRouter } from "next/navigation";
 import DarkModeSwitcher from "./switch";
 
