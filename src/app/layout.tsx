@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.scss";
-import Sidebar from "@/components/sidebar";
 import ThemeProvider from "@/context/themectx";
 import Navbar from "@/components/Navbar";
 import SkeletonNavbar from "@/components/skeltonav";
 import { Suspense } from "react";
-import SideBar from "@/components/side";
+import SideBar from "@/components/SideBar";
 import StateCtxProvider from "@/context/statectx";
 
 const plusJ = Plus_Jakarta_Sans({
@@ -34,7 +33,7 @@ export default function RootLayout({
           >
             <section className="flex h-full w-full">
               <SideBar />
-              <div className="">
+              <div className="ml-[80px]">
                 <Suspense fallback={<SkeletonNavbar />}>
                   <Navbar />
                 </Suspense>
