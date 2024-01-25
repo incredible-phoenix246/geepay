@@ -129,9 +129,9 @@ const Profile = () => {
                 security analysis and web development. I prefers using Python as
                 their scripting language, TypeScript for any web related issues.
                 I use Next for web development and utilize Tailwind CSS for
-                styling unless stated otherwise. Additionally, they emphasize
+                styling unless stated otherwise. Additionally, i emphasize
                 adding specific headers to Python files and including
-                documentation in their code.
+                documentation in their code. Also I love Gaming 
               </p>
             </div>
           </div>
