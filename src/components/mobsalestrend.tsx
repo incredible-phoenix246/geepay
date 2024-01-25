@@ -7,7 +7,7 @@ import Card from "./Card";
 import Menu from "./menu";
 const SalesTrendMob = () => {
   return (
-    <Card extra="pb-7 md:hidden sm:flex max-w-[350px]">
+    <Card extra="p-2 ml-5 md:hidden sm:flex max-w-[350px]">
       <div className="flex flex-row justify-between">
         <div className="ml-1 pt-2">
           <p className="text-[34px] font-bold text-navy-700 dark:text-white">
