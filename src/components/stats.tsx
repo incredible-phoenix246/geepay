@@ -2,7 +2,7 @@ import React from "react";
 
 function SalesStatistics() {
   return (
-    <form className="justify-center items-stretch border bg-white flex max-w-[239px] flex-col p-4 rounded-2xl border-solid border-slate-100">
+    <form className="justify-center items-stretch border bg-white flex max-w-[239px] flex-col p-4 rounded-2xl border-solid border-slate-100 dark:!bg-navy-800 dark:text-white">
       <header className="justify-between items-stretch flex gap-5">
         <img
           loading="lazy"
