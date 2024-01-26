@@ -20,6 +20,7 @@ const Widget = (props: {
         <p className="font-dm text-sm font-medium text-gray-600">{title}</p>
         <h4 className="text-xl font-bold text-navy-700 dark:text-white">
           {subtitle}
+
         </h4>
       </div>
     </Card>
