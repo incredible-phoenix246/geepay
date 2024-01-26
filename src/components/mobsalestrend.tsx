@@ -1,7 +1,7 @@
 import BarChart from "./barChart";
 import {
-  barChartOptionsDailyTraffic,
-  barChartDataDailyTraffic
+  barChartOptionsDailyTraffic2,
+  barChartDataDailyTraffic2
 } from "@/constants";
 import Card from "./Card";
 import Menu from "./menu";
@@ -23,8 +23,8 @@ const SalesTrendMob = () => {
 
       <div className="h-[300px] w-full pt-10 pb-0 overflow-x-auto">
         <BarChart
-          chartData={barChartDataDailyTraffic}
-          chartOptions={barChartOptionsDailyTraffic}
+          chartData={barChartDataDailyTraffic2}
+          chartOptions={barChartOptionsDailyTraffic2}
         />
       </div>
     </Card>
