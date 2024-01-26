@@ -13,7 +13,7 @@ function Order() {
     <>
       <section
         className={cn(
-          "w-full ml-[20px] hidden dark:!bg-navy-800 dark:text-white md:flex flex-col justify-center rounded-xl  max-w-[806px] max-h-[418px]"
+          "w-full ml-[20px] hidden bg-white dark:!bg-navy-800 dark:text-white md:flex flex-col justify-center rounded-xl  max-w-[806px] max-h-[418px]"
         )}
       >
         <div className="w-full flex items-center justify-between px-5 py-2">
