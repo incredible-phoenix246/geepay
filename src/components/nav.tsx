@@ -23,6 +23,7 @@ const Nav = (props: { brandText: string }) => {
 
   const [todayDate, setTodayDate] = useState("");
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+    const { ref: searchRef, isVisible: searchDropdown, setIsVisible: setSearchDropdown } = useVisible();
 
   useEffect(() => {
     const currentDate = new Date();
@@ -69,9 +70,8 @@ const Nav = (props: { brandText: string }) => {
           className={`sm:cursor-pointer ${
             isDropdownVisible ? "bg-gray-200 p-2 rounded" : ""
           }`}
-          onClick={handleCalendarClick}
-        >
-          <Calendar />
+         onClick={() => setSearchDropdown(true)}>
+                  <Calendar />
         </div>
         <h2 className="hidden md:flex">{todayDate}</h2>
         <Notification />
@@ -103,9 +103,19 @@ const Nav = (props: { brandText: string }) => {
         <ArrowDown2 className="hidden md:flex" />
       </div>
 
+        {searchDropdown && (
+          <div
+            ref={searchRef}
+            style={{ boxShadow: '0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 1px 3px 0px rgba(16, 24, 40, 0.10)' }}
+            className="absolute bg-white-N0 rounded-lg w-[15rem] p-3 right-8 top-[80px]"
+          >
+           <h2>{todayDate}</h2>
+          </div>
+        )}
+
       {isDropdownVisible && (
         <div className="absolute left-0 mt-2 p-2 bg-white border border-gray-300 rounded shadow">
-          <h2>{todayDate}</h2>
+          
         </div>
       )}
       {profileDropdown && (
