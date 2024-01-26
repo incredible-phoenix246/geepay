@@ -20,8 +20,11 @@ const TopPlat = () => {
       <div className="flex flex-col gap-2">
         <h2 className="text-semibold text-xl leading-6 text-black dark:text-[#34CAA5]">
           Artisan Aisle
-        </h2>
+        </h2> 
+    <div className="lg:flex hidden">
         <Progress width="w-[400px]" value={60} color="blue" />
+  </div>
+          <Progress width="w-[250px]" value={60} color="blue" />
         <div className="flex justify-between items-center">
           <p className="text-neutral-600 text-lg leading-6">$1,800,000</p>
           <p className="text-neutral-600 text-lg leading-6">+10%</p>
@@ -30,8 +33,11 @@ const TopPlat = () => {
       <div className="flex flex-col gap-2">
         <h2 className="text-semibold text-xl leading-6 text-black dark:text-[#34CAA5]">
           Toy Troop
-        </h2>
+        </h2> 
+    <div className="lg:flex hidden">
         <Progress width="w-[400px]" value={40} color="yellow" />
+  </div>
+          <Progress width="w-[250px]" value={40} color="yellow" />
         <div className="flex justify-between items-center">
           <p className="text-neutral-600 text-lg leading-6">$1,200,000</p>
           <p className="text-neutral-600 text-lg leading-6">+8%</p>
@@ -41,7 +47,10 @@ const TopPlat = () => {
         <h2 className="text-semibold text-xl leading-6 text-black dark:text-[#34CAA5]">
           XStore
         </h2>
+    <div className="lg:flex hidden">
         <Progress width="w-[400px]" value={20} color="red" />
+  </div>
+           <Progress width="w-[250px]" value={40} color="red" />
         <div className="flex justify-between items-center">
           <p className="text-neutral-600 text-lg leading-6">$800,000</p>
           <p className="text-neutral-600 text-lg leading-6">+6%</p>
