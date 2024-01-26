@@ -3,7 +3,7 @@ import Link from "next/link"
 
 const NotFoundPage = () => {
   return (
-    <div className="text-center w-full">
+    <div className="text-center w-full items-center justify-center">
       <h1 className="mb-4 text-6xl font-semibold text-red-500">404</h1>
       <p className="mb-4 text-lg text-gray-600">Oops! Looks like you&apos;re lost.</p>
       <div className="animate-bounce">
