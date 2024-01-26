@@ -9,7 +9,7 @@ const TopPlat = () => {
           Book Bazaar
         </h2>
     <div className="lg:flex hidden">
-        <Progress width="w-[400px]" value={80} />
+        <Progress width="w-[350px]" value={80} />
   </div>
 
     <div className="flex lg:hidden">
@@ -25,7 +25,7 @@ const TopPlat = () => {
           Artisan Aisle
         </h2> 
     <div className="lg:flex hidden">
-        <Progress width="w-[400px]" value={60} color="blue" />
+        <Progress width="w-[350px]" value={60} color="blue" />
   </div>
  <div className="flex lg:hidden">
           <Progress width="w-[250px]" value={60} color="blue" />
@@ -40,7 +40,7 @@ const TopPlat = () => {
           Toy Troop
         </h2> 
     <div className="lg:flex hidden">
-        <Progress width="w-[400px]" value={40} color="yellow" />
+        <Progress width="w-[350px]" value={40} color="yellow" />
   </div>
  <div className="flex lg:hidden">
           <Progress width="w-[250px]" value={40} color="yellow" />
@@ -55,7 +55,7 @@ const TopPlat = () => {
           XStore
         </h2>
     <div className="lg:flex hidden">
-        <Progress width="w-[400px]" value={20} color="red" />
+        <Progress width="w-[350px]" value={20} color="red" />
   </div>
  <div className="flex lg:hidden">
            <Progress width="w-[250px]" value={20} color="red" />
