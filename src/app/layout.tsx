@@ -34,7 +34,7 @@ export default function RootLayout({
           >
             <section className="flex h-full w-full">
               <SideBar />
-              <div className="ml-[80px]">
+              <div className="md:ml-[80px] ml-[60px]">
                 <Suspense fallback={<SkeletonNavbar />}>
                   <Nav brandText={""} />
                 </Suspense>
