@@ -13,7 +13,7 @@ import Order2 from "@/components/order2";
 
 const Home = () => {
   return (
-    <section className="md:py-0 py-3">
+    <section className="md:my-0 my-3">
      <SalesTrendMob />
       <div className="flex items-center w-full gap-5 justify-between">
         <SalesTrend />
