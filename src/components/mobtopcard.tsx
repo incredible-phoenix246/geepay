@@ -4,7 +4,7 @@ import Link from "next/link"
 
 const TopPlatmob = () => {
   return (
-    <Card extra="max-w-[350px] md:hidden ml-2 flex max-h-[448px] overflow-y-auto overflow-x-hidden items-center justify-center self-center py-5  gap-4 px-6">
+    <Card extra="max-w-[350px] md:hidden hide-scroll ml-2 flex max-h-[448px] overflow-y-auto overflow-x-hidden items-center justify-center self-center py-5  gap-4 px-6">
               <div className="w-full flex items-center justify-between px-5 py-2">
           <h2 className="text-lg font-medium leading-[28.8px] text-black dark:text-white">
             Top Platform
