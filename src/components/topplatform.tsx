@@ -5,7 +5,7 @@ import Link from "next/link"
 const TopPlat = () => {
   return (
     <Card extra="max-w-[452px] hide-scroll hidden md:flex p-[20px] max-h-[448px] overflow-y-auto overflow-x-hidden items-center justify-center py-5 md:gap-4 gap-2">
-        <div className="w-full flex items-center justify-between px-5 py-2">
+        <div className="w-full flex items-center justify-between px-2 py-2">
           <h2 className="text-lg font-medium leading-[28.8px] text-black dark:text-white">
            Top Platform 
           </h2>
