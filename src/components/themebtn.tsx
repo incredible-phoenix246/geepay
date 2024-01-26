@@ -7,7 +7,7 @@ const ThemeButtons = () => {
   return (
     <div
       className={cn(
-        "flex flex-col gap-y-4 p-2 items-center  rounded-full w-[46px] h-[92px] justify-between bg-blue-100 dark:!bg-navy-800  transition-all duration-700 relative before:content-[''] before:absolute before:h-[30px] before:w-[30px] before:bg-[#34CAA5] before:rounded-full  ",
+        "flex flex-col gap-y-4 p-2 items-center  rounded-full w-[46px] h-[92px] justify-between bg-blue-100 dark:!bg-white/40  transition-all duration-700 relative before:content-[''] before:absolute before:h-[30px] before:w-[30px] before:bg-[#34CAA5] before:rounded-full  ",
         theme === "light" ? "light-theme" : "dark-theme"
       )}
     >
