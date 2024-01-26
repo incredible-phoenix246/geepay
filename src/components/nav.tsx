@@ -107,7 +107,7 @@ const Nav = (props: { brandText: string }) => {
           <div
             ref={searchRef}
             style={{ boxShadow: '0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 1px 3px 0px rgba(16, 24, 40, 0.10)' }}
-            className="absolute bg-white dark:!bg-navy-800 dark:text-white  rounded-lg w-[15rem] p-3 right-8 top-[40px] md:top-[80px]"
+            className="absolute bg-white dark:!bg-navy-800 dark:text-white  rounded-lg w-full  p-3 right-8 top-[40px] md:top-[80px]"
           >
            <h2>{todayDate}</h2>
           </div>
