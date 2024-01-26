@@ -91,7 +91,7 @@ function Order() {
                 </span> */}
                 <span className="text-[16px] w-full max-w-[150px] flex items-center justify-center  h-full flex-nowrap">
                   <button
-                    className="text-[16px] lg:flex gap-x-2 hidden "
+                    className="text-[16px] flex  gap-x-2"
                     // href={`/student/${student.id}`}
                   >
                     <DocumentDownload />
