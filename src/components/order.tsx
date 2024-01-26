@@ -95,7 +95,7 @@ function Order() {
                     // href={`/student/${student.id}`}
                   >
                     <DocumentDownload />
-                    <span className=">View</span>
+                    <span className="">View</span>
                   </button>
                 </span>
               </div>
