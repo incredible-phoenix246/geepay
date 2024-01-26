@@ -11,7 +11,10 @@ const TopPlat = () => {
     <div className="lg:flex hidden">
         <Progress width="w-[400px]" value={80} />
   </div>
+
+    <div className="flex lg:hidden">
         <Progress width="w-[250px]" value={80} />
+</div>
         <div className="flex justify-between items-center">
           <p className="text-neutral-600 text-lg leading-6">$2,500,000</p>
           <p className="text-neutral-600 text-lg leading-6">+15%</p>
@@ -24,7 +27,9 @@ const TopPlat = () => {
     <div className="lg:flex hidden">
         <Progress width="w-[400px]" value={60} color="blue" />
   </div>
+ <div className="flex lg:hidden">
           <Progress width="w-[250px]" value={60} color="blue" />
+</div>
         <div className="flex justify-between items-center">
           <p className="text-neutral-600 text-lg leading-6">$1,800,000</p>
           <p className="text-neutral-600 text-lg leading-6">+10%</p>
@@ -37,7 +42,9 @@ const TopPlat = () => {
     <div className="lg:flex hidden">
         <Progress width="w-[400px]" value={40} color="yellow" />
   </div>
+ <div className="flex lg:hidden">
           <Progress width="w-[250px]" value={40} color="yellow" />
+</div>
         <div className="flex justify-between items-center">
           <p className="text-neutral-600 text-lg leading-6">$1,200,000</p>
           <p className="text-neutral-600 text-lg leading-6">+8%</p>
@@ -50,7 +57,9 @@ const TopPlat = () => {
     <div className="lg:flex hidden">
         <Progress width="w-[400px]" value={20} color="red" />
   </div>
+ <div className="flex lg:hidden">
            <Progress width="w-[250px]" value={20} color="red" />
+</div>
         <div className="flex justify-between items-center">
           <p className="text-neutral-600 text-lg leading-6">$800,000</p>
           <p className="text-neutral-600 text-lg leading-6">+6%</p>
