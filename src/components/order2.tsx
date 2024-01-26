@@ -3,7 +3,7 @@ import * as React from "react";
 
 function Order() {
   return (
-    <form className="justify-center items-stretch  bg-white flex max-w-[200px] flex-col p-2 rounded-2xl dark:!bg-navy-800 dark:text-white">
+    <form className="justify-center items-stretch  bg-white flex w-full md:max-w-[200px] flex-col p-2 rounded-2xl dark:!bg-navy-800 dark:text-white">
       <header className="justify-between items-stretch flex gap-5">
         <BoxTick
           variant="Bulk"
