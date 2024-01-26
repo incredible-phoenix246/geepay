@@ -1,5 +1,6 @@
 import Card from "./Card";
 import Progress from "./progressbar";
+import Link from "next/link"
 
 const TopPlatmob = () => {
   return (
