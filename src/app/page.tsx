@@ -16,7 +16,7 @@ const Home = () => {
     <section className="md:my-0 my-3">
       <div className="flex items-center w-full gap-5 justify-between">
         <SalesTrend />
-        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-2 ml-2 md:ml-0 md:pl-0 mb-5 md:mb-0 gap-5 self-center md:mt-0 mt-3">
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-2 ml-2 md:ml-0 md:pl-0 mb-5 md:mb-0 gap-5 max-h-[4180x] overflow-y-auto overflow-x-hidden self-center md:mt-0 mt-3">
           <Order2 />
           <TotalRefundComponent />
           <SalesStatistics />
