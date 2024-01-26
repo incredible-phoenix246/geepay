@@ -54,7 +54,7 @@ function Order() {
                   "flex flex-nowrap  items-center  w-full h-[70px]  border-b border-gray-200 py-1 transition-all duration-300"
                 )}
               >
-                <span className="w-full max-w-[60px] hidden lg:flex  justify-center h-full flex items-center px-1 ">
+                <span className="w-full max-w-[60px]  justify-center h-full flex items-center px-1 ">
                   <Image
                     src={student.avatar}
                     alt={"avatar"}
