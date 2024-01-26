@@ -11,7 +11,7 @@ const TopPlat = () => {
     <div className="lg:flex hidden">
         <Progress width="w-[400px]" value={80} />
   </div>
-        <Progress width="w-[300px]" value={80} />
+        <Progress width="w-[200px]" value={80} />
         <div className="flex justify-between items-center">
           <p className="text-neutral-600 text-lg leading-6">$2,500,000</p>
           <p className="text-neutral-600 text-lg leading-6">+15%</p>
