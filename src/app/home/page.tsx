@@ -16,7 +16,7 @@ function SalesDashboard() {
         />
         <img
           loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/ae46b12b6f48f7ba1a31db05c3147d2f30e040d0630f61bce4ec9193c053ad92?apiKey=252f8d5a726747838fcb04939a832fc3&"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/ae46b12b6f48f7ba1a31db05c3547d2f30e040d0630f61bce4ec9193c053ad92?apiKey=252f8d5a726747838fcb04939a832fc3&"
           className="aspect-[3.25] object-contain object-center w-[104px] overflow-hidden self-center shrink-0 max-w-full my-auto"
           alt="Image"
         />
