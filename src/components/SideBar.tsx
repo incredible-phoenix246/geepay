@@ -14,7 +14,7 @@ const Sidebar = () => {
   const [activeLink, setActiveLink] = useState(SIDEBAR_LINKS[0].link);
 
   return (
-    <section className="bg-[#f7f8fa]   dark:!bg-navy-800 dark:text-white dark:border-r-gray-700 border-r-[#EBECF2] z-[50] w-[80px]  transition-all duration-300 py-5 flex flex-col gap-y-4 items-center justify-between fixed h-screen left-0 top-0  border-r border-gray-200  sidebar-scroll  group select-none">
+    <section className="bg-[#f7f8fa]   dark:!bg-navy-800 dark:text-white dark:border-r-gray-700 border-r-[#EBECF2] z-[50] md:-[80px]  -[60px] transition-all duration-300 py-5 flex flex-col gap-y-4 items-center justify-between fixed h-screen left-0 top-0  border-r border-gray-200  sidebar-scroll  group select-none">
       <div className="flex flex-col gap-y-4  w-full items-center relative">
         <Link href="/" className=" w-10  h-10 mb-5">
           <FlashCircle color="#34CAA5" variant="Bold" size={50} />
