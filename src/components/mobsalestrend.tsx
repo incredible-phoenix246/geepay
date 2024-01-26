@@ -21,7 +21,7 @@ const SalesTrendMob = () => {
         </div>
       </div>
 
-      <div className="h-[300px] w-full pt-10 pb-0 overflow-x-auto">
+      <div className="h-[300px] w-full pt-10 pb-0">
         <BarChart
           chartData={barChartDataDailyTraffic2}
           chartOptions={barChartOptionsDailyTraffic2}
