@@ -32,7 +32,7 @@ function Order() {
             Name
           </span>
 
-          <span className=" font-medium w-full max-w-[101px] flex items-center  h-full justify-start">
+          <span className=" font-medium w-full max-w-[101px] flex items-center  h-full lg:justify-start justify-center">
             Status
           </span>
           <span className=" font-medium w-full max-w-[97px] flex items-center justify-center h-full">
