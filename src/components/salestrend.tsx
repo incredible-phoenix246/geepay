@@ -8,7 +8,7 @@ import Card from "./Card";
 import Menu from "./menu";
 const SalesTrend = () => {
   return (
-    <Card extra="p-[20px] ml-5 hidden md:flex max-w-[806px]">
+    <Card extra="p-[20px] ml-5 hidden md:flex max-w-[806px] lg:min-w-[806px]">
       <div className="flex flex-row justify-between">
         <div className="ml-1 pt-2">
           <p className="text-[34px] font-bold text-navy-700 dark:text-white">
