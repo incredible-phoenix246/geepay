@@ -50,7 +50,7 @@ const TopPlat = () => {
     <div className="lg:flex hidden">
         <Progress width="w-[400px]" value={20} color="red" />
   </div>
-           <Progress width="w-[250px]" value={40} color="red" />
+           <Progress width="w-[250px]" value={20} color="red" />
         <div className="flex justify-between items-center">
           <p className="text-neutral-600 text-lg leading-6">$800,000</p>
           <p className="text-neutral-600 text-lg leading-6">+6%</p>
