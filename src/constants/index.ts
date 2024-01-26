@@ -482,4 +482,4 @@ export const SIDEBAR_FOO_LINKS: SidebarFooterProps[] = [
   },
 ];
 
-export const TYPESidebarLinks = SIDEBAR_LINKS.map((link) => link.link);
+// export const TYPESidebarLinks = SIDEBAR_LINKS.map((link) => link.link);
