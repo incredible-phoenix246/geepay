@@ -14,9 +14,9 @@ import Order2 from "@/components/order2";
 const Home = () => {
   return (
     <section className="">
+     <SalesTrendMob />
       <div className="flex items-center w-full gap-5 justify-between">
         <SalesTrend />
-<SalesTrendMob />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-2 ml-2 md:ml-0 md:pl-0 mb-5 md:mb-0 gap-5 self-center">
           <Order2 />
           <TotalRefundComponent />
