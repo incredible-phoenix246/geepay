@@ -4,11 +4,17 @@ import Progress from "./progressbar";
 const TopPlat = () => {
   return (
     <Card extra="max-w-[452px] hidden md:flex p-[20px] max-h-[448px] overflow-y-auto overflow-x-hidden items-center justify-center py-5 md:gap-4 gap-2">
+        <div className="w-full flex items-center justify-between px-5 py-2">
+          <h2 className="text-lg font-medium leading-[28.8px] text-black dark:text-white">
+           Top Platform 
+          </h2>
 
-      <div className="py-4 mt-4 top flex justify-between text-black dark:text-[#34CAA5]  text-xs md:text-sm lg:text-md font-bold">
-        <h2 className=""> Top Platform </h2>
-        <span className="cursor-pointer">See All</span>
-      </div>
+          <div>
+            <Link href="/" className="text-[#34CAA5] ">
+              See All
+            </Link>
+          </div>
+        </div>
       <div className="flex flex-col gap-2">
         <h2 className="text-semibold text-xl leading-6 text-black dark:text-[#34CAA5]">
           Book Bazaar
