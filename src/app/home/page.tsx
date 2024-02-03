@@ -8,12 +8,7 @@ function SalesDashboard() {
       aria-label="Sales Dashboard"
     >
       <header className="justify-between items-stretch flex gap-5">
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/76ccc68d973a9e7576903fbefcc91f77798d5378a6e78542a8cd0ab0215fa940?apiKey=252f8d5a726747838fcb04939a832fc3&"
-          className="aspect-square object-contain object-center w-10 overflow-hidden shrink-0 max-w-full"
-          alt="Logo"
-        />
+        
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/ae46b12b6f48f7ba1a31db05c3547d2f30e040d0630f61bce4ec9193c053ad92?apiKey=252f8d5a726747838fcb04939a832fc3&"
